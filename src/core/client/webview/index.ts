@@ -4,6 +4,7 @@ import { WebViewEvents } from '../../shared/webviewEvents';
 
 const F2_KEY = 113;
 let view: alt.WebView;
+view = new alt.WebView('http://assets/webviews/index.html');
 let isFocused = false;
 
 export function focusWebView() {
@@ -34,10 +35,9 @@ alt.on('keydown', async (keyCode: number) => {
         return;
     }
 
-    view = new alt.WebView('http://assets/webviews/index.html');
     await new Promise((resolve: (...args: any[]) => void) => {
         view.once('load', resolve);
-    });
+    });   
 
     focusWebView();
 });

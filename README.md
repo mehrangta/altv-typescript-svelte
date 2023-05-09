@@ -1,5 +1,5 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V with Vue - v5.0.1</b>
+	<b>Typescript Boilerplate for alt:V with Svelte - v5.0.1</b>
 </p>
 <p align="center">
 	<img src="https://thumbs.gfycat.com/FabulousFlawlessLamb-size_restricted.gif" width="350" title="hover text">
@@ -24,7 +24,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 -	Auto Download Resources
 -	Single Resource Code Support
 -	Fastest Auto Reconnect Time on Recompile
--	Built-in Vue for WebViews
+-	Built-in Svelte for WebViews
 
 # Installation
 
@@ -36,7 +36,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 Use the command below in any terminal, command prompt, etc.
 
 ```sh
-git clone https://github.com/Stuyk/altv-typescript-vue
+git clone https://github.com/mehrangta/altv-typescript-svelte
 ```
 
 ## Install the Repository
@@ -44,7 +44,7 @@ git clone https://github.com/Stuyk/altv-typescript-vue
 Use the command below in any terminal, command prompt, etc.
 
 ```sh
-cd altv-typescript-vue
+cd altv-typescript-svelte
 npm install
 ```
 
@@ -87,7 +87,7 @@ npm run dev
 If you need to modify the WebView and want to work out of the browser, use the following command.
 
 ```
-npm run vue-dev
+npm run webdev
 ```
 
 ## End Server Runtime

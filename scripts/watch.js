@@ -2,6 +2,7 @@
 import { spawnSync, spawn, ChildProcess } from 'node:child_process'
 import Watcher from 'watcher';
 import { writeToIpc, sleep } from './shared.js';
+import fkill from 'fkill'
 
 const fileWatcher = new Watcher(['./src', './src-webviews'], { recursive: true, renameDetection: true });
 const isWindows = process.platform === "win32";
@@ -37,6 +38,7 @@ async function reboot() {
     if (childProcess) {
         try {
             childProcess.kill();
+            await fkill(':7788')
         } catch (err) { }
 
         await new Promise((resolve) => {

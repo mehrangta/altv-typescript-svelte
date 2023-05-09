@@ -31,10 +31,10 @@
         "src/**/*.ts",
         "src/**/*.d.ts",
         "src/**/*.tsx",
-        "src/**/*.vue",
+        "src/**/*.svelte",
         "src/core/plugins/**/webview/**.ts",
-        "src/core/plugins/**/webview/**.vue",
-        "src/core/plugins/**/components/**.vue"
+        "src/core/plugins/**/webview/**.svelte",
+        "src/core/plugins/**/components/**.svelte"
     ],
     "exclude": [
         "resources",
